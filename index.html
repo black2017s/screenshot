@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تصميم الموقع</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./logo_type_ui@2x-7130eee90f.png" alt="Logo">
+            <!-- <span>Gyazo</span> -->
+        </div>
+        <div class="share-icon" onclick="openModal()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24" fill="#FFFFFF">
+                <path d="M680 976q-35 0-67-16.5T561 922L322 781q-27 26-64.5 40T180 835q-72 0-121-49.5T10 665q0-72 49.5-121T180 495q37 0 74.5 14.5T319 550l239-141q20-30 52-46t70-16q72 0 121 49.5T870 566q0 72-49.5 121T700 736q-35 0-67-14t-59-38L335 826q11 23 11 51 0 33-15 59.5T293 967q-11 0-11 11t11 11q35 0 67-14.5t57-42.5l236-146q27 27 60.5 41.5T700 856q72 0 121-49.5T870 686q0-72-49.5-121T700 516q-35 0-67 16.5T570 569l-239 141q-27-25-59-38.5T180 666q-37 0-69.5 17T62 736q0 37 17 69.5t44 48.5 63 17q35 0 67-16.5T319 833l239-146q23 30 57 46.5T700 736q37 0 69.5-17t56.5-48.5 22-69.5q0-37-17-69.5T764 495q-37 0-69.5 17T638 561l-236 140q-23-28-56-41.5T289 646q-37 0-69.5 17t-56.5 48.5q-22 37-22 69.5 0 37 17 69.5T180 856q37 0 69.5-17t56.5-48.5q11-18 29-18t29 18q11 0 0 11T650 900Z"/>
+            </svg>
+        </div>
+    </nav>
+    
+    <!-- نافذة منبثقة -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>شارك هذه الصفحة على مواقع التواصل الاجتماعي!</p>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="main-image">
+            <img id="uploadedImage" src="./d0d25b8f440899821c3b376f9d2526f6.png" alt="Main Image">
+        </div>
+    </header>
+
+    <section class="upload-section">
+        <button class="camera-btn" onclick="uploadImage()">📷</button>
+        <input type="file" id="imageInput" style="display: none;" accept="image/*">
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
